@@ -1,0 +1,40 @@
+---
+const { tittle, image, list, direction } = Astro.props;
+console.log(list);
+---
+
+<div class="row mb-4">
+    {
+        direction && (
+            <div class="col-3">
+                <div class="w-images">
+                    <img class="img-services" width="100%" src={image} alt="" />
+                </div>
+            </div>
+        )
+    }
+    <div class="col-9">
+        <div
+            class:list={[
+                "text-services text-start",
+                {
+                    "text-services text-start": direction,
+                    "text-services text-end": !direction,
+                },
+            ]}
+        >
+            <h2>{tittle}</h2>
+            {list.map((i: any) => <p>{i}</p>)}
+        </div>
+    </div>
+
+    {
+        !direction && (
+            <div class="col-3">
+                <div class="w-images">
+                    <img class="img-services" width="100%" src={image} alt="" />
+                </div>
+            </div>
+        )
+    }
+</div>

@@ -1,0 +1,71 @@
+---
+import ServiceContent from "./ServiceContent.astro";
+---
+
+<div class="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-light text-decoration-underline">
+                    Nuestros Servicios
+                </h1>
+            </div>
+        </div>
+
+        <div class="col-12 mt-4 px-5">
+            <ServiceContent
+                tittle="Remodelaciones y Construcción en General"
+                image="https://static.wixstatic.com/media/5eeca8_553c61afcc43420aa53d5042d0d1142e~mv2.jpg/v1/fill/w_372,h_358,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Ingenieros_edited.jpg"
+                list={["Casas", "Oficinas", "Diseño de Interiores"]}
+                direction={true}
+            />
+            <ServiceContent
+                tittle="Suministro, Instalación y Restauración"
+                image="https://static.wixstatic.com/media/5eeca8_57783ce51a0e45fb85141509d22feadf~mv2.jpg/v1/crop/x_125,y_0,w_710,h_646/fill/w_372,h_358,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/34.jpg"
+                list={[
+                    "Pisos de Ingeniería en Madera",
+                    "Pisos Vinílicos",
+                    "Pisos Deck",
+                ]}
+                direction={false}
+            />
+            <ServiceContent
+                tittle="Suministro e Instalacion de muebles a la medida"
+                image="/services.png"
+                list={[
+                    "Muebles de cocina",
+                    "Muebles para oficina",
+                    "Mesas Personalizadas",
+                ]}
+                direction={true}
+            />
+            <ServiceContent
+                tittle="Mantenimiento Residenciales y empresariales"
+                image="https://static.wixstatic.com/media/5eeca8_69040c1d798f4f4f8c9a6584376ee6c0~mv2.jpg/v1/fill/w_372,h_358,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2.jpg"
+                list={[
+                    "Fontanería",
+                    "Electricidad",
+                    "Techos y Canoas",
+                    "Pintura y acabados",
+                ]}
+                direction={false}
+            />
+            <ServiceContent
+                tittle="Muebles a la medida en Madera y Tejidos"
+                image="https://static.wixstatic.com/media/5eeca8_1c018cf595094704818a585eb9f8ef13~mv2.jpg/v1/crop/x_0,y_116,w_2250,h_2162/fill/w_372,h_358,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/WhatsApp%20Image%202024-06-13%20at%2012_08_edite.jpg"
+                list={["Sillas", "Camas", "Recibidor", "Cómodas", "Butacas"]}
+                direction={true}
+            />
+            <ServiceContent
+                tittle="Páneles decorativos de interiro y exterior"
+                image="https://static.wixstatic.com/media/5eeca8_eca7c98f681b44ac9be3967384bae5e9~mv2.jpeg/v1/fill/w_372,h_358,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Panel%20acanalado.jpeg"
+                list={[
+                    "Wall Panel",
+                    "Láminas PVC acabado en mármol",
+                    "Iluminación led inteligente",
+                ]}
+                direction={false}
+            />
+        </div>
+    </div>
+</div>
