@@ -6,7 +6,6 @@
 		<link rel="icon" type="image/svg+xml" href="/icono.webp" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro Basics</title>
-		<link rel="stylesheet" href="/src/styles/global.css"/>
 		<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 	</head>
 	<body>
@@ -15,6 +14,8 @@
 </html>
 
 <style is:global>
+
+
 	body {
   margin: 0;
   padding: 0%;
@@ -30,6 +31,8 @@
   --light-gray: rgb(203, 190, 180);
   --light-blue:rgb(175, 189, 202);
 }
+
+
 
 #background-video {
   position: fixed;
@@ -418,4 +421,9 @@
   cursor: pointer;
   background-color: var(--white);
 }
+
+.stoneflex-tittle{
+  font-size: 90px;
+}
+
 </style>

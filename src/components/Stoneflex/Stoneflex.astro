@@ -1,0 +1,83 @@
+<div class="stone-gb text-center">
+    <h1 class="text-center text-light mt-5">
+        Conoce Nuestra Nueva linea De Productos
+    </h1>
+    <div class="stoneflex-tittle rajdhani-medium">
+        <div class="stone-text">
+            <h1>StoneFlex</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <img class="st1 st" src="/stoneflex/st1.png" alt="">
+                <img class="st2 st" src="/stoneflex/st2.png" alt="">
+                <img class="st3 st" src="/stoneflex/st3.png" alt="">
+                <img class="st4 st" src="/stoneflex/st4.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+    .rajdhani-medium {
+        font-family: "Rajdhani", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+    .stone-gb {
+        background: linear-gradient(rgba(41, 30, 20, 0.518), rgb(12, 12, 12)),
+            url("/public/stoneflex/bg-stone.png");
+        padding: 20px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+    }
+    .stoneflex-tittle {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .stone-text {
+        background-color: black;
+        color: rgb(212, 212, 212);
+        border-radius: 60px;
+        padding: 20px 30px;
+    }
+    
+    .stone-text h1 {
+        background: linear-gradient(to left, white, rgb(14, 129, 174));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        line-height: 90px;
+        font-size: 100px;
+    }
+
+    .st1{
+        transform: translateY(-10px) rotate(-7deg) scale(0.8);
+    }
+    .st2{
+        transform: translateY(10px) rotate(8deg) scale(0.9);
+    }
+    .st3{
+        transform: translateY(-10px) rotate(-6deg) scale(1);
+    }
+    .st4{
+        transform: translateY(10px) rotate(7deg) scale(1.1);
+    }
+
+    .st{
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        transition: 0.4s;
+    }
+
+    .st:hover{
+        border: 2px solid white;
+        cursor: pointer;
+        transform: translateY(0px) rotate(0deg) scale(1);
+    }
+
+</style>
