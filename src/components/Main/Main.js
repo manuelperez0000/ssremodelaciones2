@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.querySelector(".scroll-down").addEventListener("click", function () {
     const nextSection = this.closest("section").nextElementSibling
-    console.log(nextSection)
+    /* const nextSection = document.querySelector(".sec2") */
     if (nextSection) {
         window.scrollTo({
             top: nextSection.offsetTop,
@@ -47,3 +47,6 @@ window.addEventListener("scroll", () => {
     }
 });
 
+document.getElementById("services-btn").addEventListener("click", function () {
+    document.getElementById("sec2").scrollIntoView({ behavior: "smooth" })
+})

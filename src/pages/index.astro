@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Footer from "../components/Footer/Footer.astro"
+import Footer from "../components/Footer/Footer.astro";
 import Services from "../components/Services/Services.astro";
 import Ventajas from "../components/Ventajas/Ventajas.astro";
 import Stoneflex from "../components/Stoneflex/Stoneflex.astro";
@@ -12,10 +12,14 @@ import Stoneflex from "../components/Stoneflex/Stoneflex.astro";
 			<source src="/cuna.webm" type="video/mp4" />
 		</video>
 		<div class="content">
+			
 			<div class="text-center">
 				<img height="110px" src="/logo.png" alt="" />
-
-				<h1 class="anton mt-5">Bienvenido a SS REMODELACIONES</h1>
+				<div class="w-welcome-text">
+					<h1 class="welcome-text anton text-light bg-dark">
+						Bienvenido a SS REMODELACIONES
+					</h1>
+				</div>
 
 				<p class="mt-2">
 					En SS Remodelaciones le ofrecemos una gran varierad de
@@ -36,6 +40,7 @@ import Stoneflex from "../components/Stoneflex/Stoneflex.astro";
 
 						<div class="col-4">
 							<div
+								id="services-btn"
 								class="hover-underline btn-menu flex-colum-center slide-up"
 							>
 								<i class="bi bi-gear gear-animation"></i>
@@ -63,15 +68,15 @@ import Stoneflex from "../components/Stoneflex/Stoneflex.astro";
 	</section>
 
 	<section id="sec4">
-		<Stoneflex></Stoneflex>
+		<Stoneflex />
 	</section>
 
 	<section id="sec2">
-		<Services></Services>
+		<Services />
 	</section>
-	
+
 	<section id="sec3">
-		<Ventajas></Ventajas>
+		<Ventajas />
 	</section>
 
 	<div class="nav-bar-mobile" id="nav-bar-mobile">
@@ -91,6 +96,6 @@ import Stoneflex from "../components/Stoneflex/Stoneflex.astro";
 		</div>
 	</div>
 
-	<Footer ></Footer>
+	<Footer />
 	<script src="../components/Main/Main.js"></script>
 </Layout>
