@@ -1,6 +1,5 @@
 ---
 const { tittle, image, list } = Astro.props;
-console.log(list);
 ---
 
 <div class="row mb-4 pb-4 border-bottom pt-4">
@@ -11,7 +10,7 @@ console.log(list);
     </div>
 
     <div class="col-xs-12 col-md-8 col-lg-9">
-        <div class="text-services text-start">
+        <div class="text-services text-start text-light">
             <h2>{tittle}</h2>
             {list.map((i: any) => <p>{i}</p>)}
         </div>
@@ -19,8 +18,5 @@ console.log(list);
 </div>
 
 <style>
-    .border-botom{
-        border-bottom: 1px solid red;
-        padding-bottom: 30px;
-    }
+   
 </style>

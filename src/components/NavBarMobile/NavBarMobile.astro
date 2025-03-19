@@ -1,30 +1,36 @@
 <div class="nav-bar-mobile" id="nav-bar-mobile">
-    <button class="nav-buttons btn1 hover-underline">
+    <a href="/products" class="nav-buttons btn1 hover-underline">
         <i class="bi bi-gem"></i>
         <span class="d-none d-md-block text-dark">Productos</span>
         <p class="d-sm-block d-md-none">Productos</p>
-    </button>
+    </a>
     <div class="separador"></div>
-    <button class="nav-buttons btn2 hover-underline">
+    <a href="/services" class="nav-buttons btn2 hover-underline">
         <i class="bi bi-gear"></i>
         <span class="d-none d-md-block text-dark">Servicios</span>
         <p class="d-sm-block d-md-none">Servicios</p>
-    </button>
+    </a>
     <div class="separador"></div>
-    <button class="nav-buttons btn3 hover-underline">
-        <i class="bi bi-phone"></i>
-        <span class="d-none d-md-block text-dark">Contactanos</span>
-        <p class="d-sm-block d-md-none">Contactanos</p>
-    </button>
-    <div class="separador"></div>
-    <button class="nav-buttons btn4 hover-underline">
+    <a href="/proyects" class="nav-buttons btn4 hover-underline">
         <i class="bi bi-hammer"></i>
         <span class="d-none d-md-block text-dark">Proyectos</span>
         <p class="d-sm-block d-md-none">Proyectos</p>
-    </button>
+    </a>
+    <div class="separador"></div>
+    <a href="/contact" class="nav-buttons btn3 hover-underline">
+        <i class="bi bi-phone"></i>
+        <span class="d-none d-md-block text-dark">Contactanos</span>
+        <p class="d-sm-block d-md-none">Contactanos</p>
+    </a>
 </div>
 
 <style>
+
+    a{
+        text-decoration: none;
+        color:rgb(34, 34, 34);
+        background-color: aliceblue;
+    }
     .nav-buttons p {
         font-size: 12px;
         font-weight: 600;
@@ -51,7 +57,7 @@
         transform: translateY(0);
     }
 
-    .separador{
+    .separador {
         height: 100%;
         width: 1px;
         z-index: 1;
