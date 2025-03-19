@@ -290,57 +290,9 @@ import { ClientRouter } from 'astro:transitions';
     font-family: "Anton", sans-serif;
   }
 
-  .nav-bar-mobile {
-    background-color: rgba(241, 241, 241, 0.842);
-    border-top: 1px solid white;
-    opacity: 0;
-    position: fixed;
-    z-index: 1;
-    bottom: 0px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(100%);
-    transition:
-      opacity 0.5s ease-in-out,
-      transform 0.5s ease-in-out;
-  }
+  
 
-  .nav-bar-mobile.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  .nav-buttons-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .nav-buttons {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    background: none;
-    border: none;
-    font-size: 20px;
-    padding: 10px 40px;
-    font-weight: 600;
-  }
-
-  .nav-buttons:hover {
-    cursor: pointer;
-  }
-
-  .btn1 {
-    border-right: 1px solid var(--gray);
-  }
-
-  .btn2 {
-    border-right: 1px solid var(--gray);
-  }
+ 
 
   
 

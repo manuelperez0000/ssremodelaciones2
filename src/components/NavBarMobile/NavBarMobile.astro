@@ -1,38 +1,89 @@
-<div class="nav-bar-mobile visible" id="nav-bar-mobile">
-    <div class="nav-buttons-wrap">
-        <button class="nav-buttons btn1 hover-underline">
-            <i class="bi bi-gem"></i>
-            <span>Productos</span>
-        </button>
-        
-        <button class="nav-buttons btn2 hover-underline">
-            <i class="bi bi-gear gear-animation"></i>
-            <span>Servicios</span>
-        </button>
-        <button class="nav-buttons btn3 hover-underline">
-            <i class="bi bi-phone"></i>
-            <span>Contactanos</span>
-        </button>
-        <button class="nav-buttons btn3 hover-underline">
-            <i class="bi bi-hammer"></i>
-            <span>Proyectos</span>
-        </button>
-    </div>
+<div class="nav-bar-mobile" id="nav-bar-mobile">
+    <button class="nav-buttons btn1 hover-underline">
+        <i class="bi bi-gem"></i>
+        <span class="d-none d-md-block text-dark">Productos</span>
+        <p class="d-sm-block d-md-none">Productos</p>
+    </button>
+    <div class="separador"></div>
+    <button class="nav-buttons btn2 hover-underline">
+        <i class="bi bi-gear"></i>
+        <span class="d-none d-md-block text-dark">Servicios</span>
+        <p class="d-sm-block d-md-none">Servicios</p>
+    </button>
+    <div class="separador"></div>
+    <button class="nav-buttons btn3 hover-underline">
+        <i class="bi bi-phone"></i>
+        <span class="d-none d-md-block text-dark">Contactanos</span>
+        <p class="d-sm-block d-md-none">Contactanos</p>
+    </button>
+    <div class="separador"></div>
+    <button class="nav-buttons btn4 hover-underline">
+        <i class="bi bi-hammer"></i>
+        <span class="d-none d-md-block text-dark">Proyectos</span>
+        <p class="d-sm-block d-md-none">Proyectos</p>
+    </button>
 </div>
 
-<script>
-	const nav_bar_mobile: any = document.querySelector("#nav-bar-mobile");
+<style>
+    .nav-buttons p {
+        font-size: 12px;
+        font-weight: 600;
+    }
 
-	window.addEventListener("scroll", () => {
-		
-		const scrollHeight = document.documentElement.scrollHeight;
-		const scrollPosition = window.innerHeight + window.scrollY;
-    /*     console.log("Position: ",scrollPosition)
+    .nav-bar-mobile {
+        background-color: rgb(36, 36, 36);
+        opacity: 0;
+        position: fixed;
+        z-index: 1;
+        bottom: 0px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(100%);
+        transition:
+            opacity 0.5s ease-in-out,
+            transform 0.5s ease-in-out;
+    }
+
+    .nav-bar-mobile.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .separador{
+        height: 100%;
+        width: 1px;
+        z-index: 1;
+    }
+    .nav-buttons {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        border: none;
+        padding: 5px;
+        font-weight: 600;
+    }
+
+    .nav-buttons:hover {
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    const nav_bar_mobile: any = document.querySelector("#nav-bar-mobile");
+
+    window.addEventListener("scroll", () => {
+        const scrollHeight = document.documentElement.scrollHeight;
+        const scrollPosition = window.innerHeight + window.scrollY;
+        /*     console.log("Position: ",scrollPosition)
         console.log("Height: ",scrollHeight) */
-		if (scrollPosition > 1200) {
-			nav_bar_mobile.classList.add("visible");
-		} else {
-			nav_bar_mobile.classList.remove("visible");
-		}
-	});
+        if (scrollPosition > 1200) {
+            nav_bar_mobile.classList.add("visible");
+        } else {
+            nav_bar_mobile.classList.remove("visible");
+        }
+    });
 </script>
