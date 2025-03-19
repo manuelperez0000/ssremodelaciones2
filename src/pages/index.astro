@@ -5,15 +5,18 @@ import Services from "../components/Services/Services.astro";
 import Ventajas from "../components/Ventajas/Ventajas.astro";
 import Stoneflex from "../components/Stoneflex/Stoneflex.astro";
 import MenuHome from "../components/NavBar/MenuHome.astro";
+import NavBarMobile from "../components/NavBarMobile/NavBarMobile.astro";
 ---
 
 <Layout>
+
+	
+	<NavBarMobile />
 	<section id="sec1">
 		<video autoplay muted loop id="background-video">
 			<source src="/cuna.webm" type="video/mp4" />
 		</video>
 		<div class="content">
-			
 			<div class="text-center">
 				<img height="110px" src="/logo.png" alt="" />
 				<div class="w-welcome-text">
@@ -50,23 +53,7 @@ import MenuHome from "../components/NavBar/MenuHome.astro";
 		<Ventajas />
 	</section>
 
-	<div class="nav-bar-mobile" id="nav-bar-mobile">
-		<div class="nav-buttons-wrap">
-			<button class="nav-buttons btn1 hover-underline">
-				<i class="bi bi-gem"></i>
-				<span>Productos</span>
-			</button>
-			<button class="nav-buttons btn2 hover-underline">
-				<i class="bi bi-gear gear-animation"></i>
-				<span>Servicios</span>
-			</button>
-			<button class="nav-buttons btn3 hover-underline">
-				<i class="bi bi-phone"></i>
-				<span>Contactanos</span>
-			</button>
-		</div>
-	</div>
-
 	<Footer />
-	<script src="../components/Main/Main.js"></script>
 </Layout>
+
+<script src="../components/Main/Main.js"></script>

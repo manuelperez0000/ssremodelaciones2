@@ -34,18 +34,7 @@ document.querySelector("#products").addEventListener("click", () => {
     window.location.href = "./products/index.html"
 })
 
-const nav_bar_mobile = document.querySelector("#nav-bar-mobile");
 
-window.addEventListener("scroll", () => {
-    const scrollHeight = document.documentElement.scrollHeight;
-    const scrollPosition = window.innerHeight + window.scrollY;
-
-    if (scrollPosition >= scrollHeight / 2) {
-        nav_bar_mobile.classList.add("visible");
-    } else {
-        nav_bar_mobile.classList.remove("visible");
-    }
-});
 
 document.getElementById("services-btn").addEventListener("click", function () {
     document.getElementById("sec2").scrollIntoView({ behavior: "smooth" })

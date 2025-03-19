@@ -5,20 +5,20 @@ import SocialButton from "../SocialButton/SocialButton.astro";
 <div class="bg-dark text-ligh pt-5">
     <div class="text-light container">
         <div class="row pb-4 pt-4">
-            <div class="col-4">
+            <div class="col-12 col-md-4 text-center">
                 <h1 class="mb-4">Contacto</h1>
                 <img src="/logo.png" alt="" />
-                <div class="text-start mt-4">
+                <div class="text-center mt-4">
                     <div>
                         <i class="bi bi-envelope"></i> gerencia@ssremodelaciones.com
                     </div>
                     <div>
                         <i class="bi bi-envelope"></i> proyectos@ssremodelaciones.com
                     </div>
-                    <div><i class="bi bi-phone"></i> +506 7006-8477</div>
-                    <div><i class="bi bi-phone"></i> +506 6242-1680</div>
+                    <a href="tel:+50670068477" class="btn-llamadas"><i class="bi bi-phone"></i> +506 7006-8477</a>
+                    <a href="tel:+50662421680" class="btn-llamadas"><i class="bi bi-phone"></i> +506 6242-1680</a>
                 </div>
-                <div class="socials mt-4">
+                <div class="socials">
                     <div>
                         <SocialButton icon="bi-facebook" href="https://www.facebook.com/ssremodelaciones"></SocialButton>
                     </div>
@@ -30,7 +30,7 @@ import SocialButton from "../SocialButton/SocialButton.astro";
                     </div>
                 </div>
             </div>
-            <div class="col-4 text-center">
+            <div class="col-12 col-md-4 text-center">
                 <h1 class="mb-4">Encuentranos</h1>
                 <a
                     target="__blanc"
@@ -53,7 +53,7 @@ import SocialButton from "../SocialButton/SocialButton.astro";
                     <i class="bi bi-pin-map"></i> Ver En Google Map
                 </a>
             </div>
-            <div class="col-4 text-end">
+            <div class="col-12 col-md-4 text-center">
                 <h1 class="">Enlaces de interes</h1>
                 <div><a href="#" target="__blanc"> enlace 1 </a></div>
                 <div><a href="#" target="__blanc"> enlace 2 </a></div>
@@ -72,13 +72,20 @@ import SocialButton from "../SocialButton/SocialButton.astro";
   .socials {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     gap: 20px;
   }
 
-  .social-icons {
-    font-size: 28px;
+  .btn-llamadas{
+    text-decoration: none;
+    font-size: 25px;
+    color: aliceblue;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
+
+  
 
   .wrap-map {
     border: 3px solid rgba(255, 255, 255, 0.562);
