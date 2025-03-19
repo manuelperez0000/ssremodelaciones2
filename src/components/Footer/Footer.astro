@@ -2,7 +2,7 @@
 import SocialButton from "../SocialButton/SocialButton.astro";
 ---
 
-<div class="bg-gray text-ligh pt-5">
+<div class="bg-dark text-ligh pt-5">
     <div class="text-light container">
         <div class="row pb-4 pt-4">
             <div class="col-4">
@@ -66,3 +66,32 @@ import SocialButton from "../SocialButton/SocialButton.astro";
         </div>
     </div>
 </div>
+
+<style>
+    
+  .socials {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+  }
+
+  .social-icons {
+    font-size: 28px;
+  }
+
+  .wrap-map {
+    border: 3px solid rgba(255, 255, 255, 0.562);
+    border-radius: 3px;
+    display: block;
+  }
+
+  .wrap-map:hover {
+    cursor: pointer;
+    border: 3px solid white;
+  }
+
+  #footer {
+    margin-bottom: 80px;
+  }
+</style>

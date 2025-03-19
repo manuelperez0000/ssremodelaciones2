@@ -1,0 +1,73 @@
+[{
+    "name":"Pisos Dec en PVC",
+    "description":"Un piso DEC en PVC es un revestimiento resistente y flexible fabricado en policloruro de vinilo. Destaca por su durabilidad, fácil mantenimiento y resistencia al agua, siendo ideal para hogares, oficinas y espacios comerciales. Además, ofrece una amplia variedad de diseños que imitan madera, piedra y otros acabados.",
+    "catalogo":"sdfsdf",
+    "foto":"/productos/1.png",
+    "id":1
+},
+{
+    "name":"Pisos Dec de ingenieria en madera",
+    "description":"Suelos elegantes y resistentes, combinan madera natural con capas de refuerzo para mayor durabilidad",
+    "catalogo":"sdfsdf",
+    "foto":"/productos/2.png",
+    "id":2
+},
+{
+    "name":"Pisos Italianos de madera",
+    "description":"Revestimientos de suelo fabricados en Italia, reconocidos por su alta calidad, diseño elegante y acabados refinados que aportan un toque sofisticado a cualquier espacio.",
+    "catalogo":"sdfsdf",
+    "foto":"/productos/3.png",
+    "id":3
+},
+{
+    "name":"Revestimientos de interiores para pared",
+    "description":"Materiales decorativos utilizados para cubrir y embellecer las paredes interiores, disponibles en diversas texturas, colores y diseños para mejorar la estética y funcionalidad de los espacios.",
+    "catalogo":"sdfsdf",
+    "foto":"/productos/4.png",
+    "id":4
+},
+{
+    "name":"Laminas de PVC tipo marmol",
+    "description":"Paneles de cloruro de polivinilo que imitan la apariencia del mármol, ofreciendo una alternativa económica, ligera y de fácil instalación para lograr un acabado lujoso en superficies interiores.",
+    "catalogo":"sdfsdf",
+    "foto":"/productos/5.png",
+    "id":5
+},
+{
+    "name":"Iluminacion Led",
+    "description":"Tecnología de iluminación que utiliza diodos emisores de luz, conocida por su eficiencia energética, larga vida útil y capacidad para ofrecer diversas tonalidades de luz, adecuada para múltiples aplicaciones.",
+    "catalogo":"sdfsdf",
+    "foto":"/productos/6.png",
+    "id":6
+},
+{
+    "name":"Muebles Premium de madera",
+    "description":"Mobiliario de alta gama fabricado en madera de calidad superior, diseñado con atención al detalle y acabados exclusivos para brindar elegancia y durabilidad en entornos selectos.",
+    "catalogo":"sdfsdf",
+    "foto":"/productos/7.png",
+    "id":7
+},
+{
+    "name":"Muebles delux para el hogar",
+    "description":"Piezas de mobiliario de lujo destinadas al uso residencial, caracterizadas por su diseño exclusivo, materiales de alta calidad y confort excepcional para crear ambientes sofisticados.",
+    "catalogo":"sdfsdf",
+    "foto":"/productos/8.png",
+    "id":8
+},
+{
+    "name":"Paneles acanalados",
+    "description":"Revestimientos con superficies onduladas o en forma de canales, utilizados tanto en interiores como en exteriores para añadir textura, mejorar la acústica y aportar un diseño distintivo a paredes y techos.",
+    "catalogo":"sdfsdf",
+    "foto":"/productos/9.png",
+    "id":9
+}
+]
+
+
+
+
+
+
+
+
+

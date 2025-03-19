@@ -1,0 +1,37 @@
+---
+import { ClientRouter } from "astro:transitions";
+import Footer from "../components/Footer/Footer.astro";
+import NavBar from "../components/NavBar/NavBar.astro"
+---
+
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/icono.webp" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Productos SS REMODELACIONES</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+            rel="stylesheet"
+        />
+        <ClientRouter />
+    </head>
+    <body class="bg-gray">
+        <NavBar />
+        <slot />
+        <Footer />
+    </body>
+</html>
+
+<style>
+    body {
+        background-color: rgb(216, 216, 216);
+    }
+
+    
+    .bg-gray{
+        background-color: rgb(248, 245, 241);
+    }
+</style>

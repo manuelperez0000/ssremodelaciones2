@@ -1,0 +1,22 @@
+[
+    {
+        "href":"/products",
+        "icon":"bi bi-gem",
+        "name":"Productos"
+    },
+    {
+        "href":"/services",
+        "icon":"bi bi-gear",
+        "name":"Servicios"
+    },
+    {
+        "href":"/contact",
+        "icon":"bi bi-phone",
+        "name":"Contactanos"
+    },
+    {
+        "href":"/proyects",
+        "icon":"bi bi-gear",
+        "name":"Proyectos"
+    }
+]

@@ -1,0 +1,14 @@
+---
+const { href, icon, name } = Astro.props;
+---
+
+<div class="col-3">
+    <a
+        href={href}
+        class="hover-underline btn-menu flex-colum-center slide-up"
+        id="products"
+    >
+        <i class={icon}></i>
+        <span>{name}</span>
+    </a>
+</div>

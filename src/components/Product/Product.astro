@@ -1,0 +1,32 @@
+---
+const {name,description,catalogo,foto} = Astro.props
+---
+<div class="col-12">
+    <div class="product-wraper d-flex mb-4">
+        <div class="product-image">
+            <img class="img-categories" height="280px" width="280px" src={foto} alt="">
+        </div>
+        <div class="product-info p-3">
+            <h1 class="m-0 p-0">{name}</h1>
+            <p>
+                {description}
+            </p>
+            <button class="btn btn-secondary"> Descargar el catalogo </button>
+        </div>
+    </div>
+</div>
+
+<style>
+    .bg-gray{
+        background-color: rgb(206, 206, 206);
+    }
+    .img-categories{
+        border-top-left-radius: 140px;
+    }
+    .product-wraper{
+        background-color: rgb(255, 255, 255);
+        border-bottom-right-radius: 140px;
+        border-top-left-radius: 140px;
+        box-shadow: 3px 3px 5px rgba(73, 73, 73, 0.263);
+    }
+</style>

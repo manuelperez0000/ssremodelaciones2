@@ -1,3 +1,6 @@
+---
+import { ClientRouter } from 'astro:transitions';
+---
 <!doctype html>
 <html lang="es">
   <head>
@@ -5,11 +8,12 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/icono.webp" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro Basics</title>
+    <title>SS REMODELACIONES</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
       rel="stylesheet"
     />
+    <ClientRouter />
   </head>
   <body>
     <slot />
@@ -153,6 +157,7 @@
   .btn-menu {
     background-color: rgba(0, 255, 255, 0);
     user-select: none;
+    text-decoration: none;
   }
 
   .btn-menu:hover {
@@ -337,35 +342,12 @@
     border-right: 1px solid var(--gray);
   }
 
-  #footer {
-    margin-bottom: 80px;
-  }
+  
 
   .text-gray {
     color: var(--gray-medium);
   }
 
-  .socials {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 20px;
-  }
-
-  .social-icons {
-    font-size: 28px;
-  }
-
-  .wrap-map {
-    border: 3px solid rgba(255, 255, 255, 0.562);
-    border-radius: 3px;
-    display: block;
-  }
-
-  .wrap-map:hover {
-    cursor: pointer;
-    border: 3px solid white;
-  }
 
   .reserved {
     border-top: 1px solid var(--gray-medium);

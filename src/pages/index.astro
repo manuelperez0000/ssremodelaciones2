@@ -4,6 +4,7 @@ import Footer from "../components/Footer/Footer.astro";
 import Services from "../components/Services/Services.astro";
 import Ventajas from "../components/Ventajas/Ventajas.astro";
 import Stoneflex from "../components/Stoneflex/Stoneflex.astro";
+import MenuHome from "../components/NavBar/MenuHome.astro";
 ---
 
 <Layout>
@@ -26,38 +27,8 @@ import Stoneflex from "../components/Stoneflex/Stoneflex.astro";
 					servicios y productos para su hogar u ofcina
 				</p>
 
-				<div class="mb-4">
-					<div class="row mt-5">
-						<div class="col-4">
-							<div
-								class="hover-underline btn-menu flex-colum-center slide-up"
-								id="products"
-							>
-								<i class="bi bi-gem"></i>
-								<span>Productos</span>
-							</div>
-						</div>
+				<MenuHome />
 
-						<div class="col-4">
-							<div
-								id="services-btn"
-								class="hover-underline btn-menu flex-colum-center slide-up"
-							>
-								<i class="bi bi-gear gear-animation"></i>
-								<span>Servicios</span>
-							</div>
-						</div>
-
-						<div class="col-4">
-							<div
-								class="hover-underline btn-menu flex-colum-center slide-up"
-							>
-								<i class="bi bi-phone"></i>
-								<span>Contactanos</span>
-							</div>
-						</div>
-					</div>
-				</div>
 				<div class="chevron flex-center scroll-down">
 					<div class="btn-chevron">
 						<i class="bi bi-chevron-double-down rounded-btn"></i>

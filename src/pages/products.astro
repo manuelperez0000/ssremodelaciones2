@@ -1,8 +1,28 @@
 ---
-import C_products from '../components/C_products.astro'
-import Layout from '../layouts/Layout.astro'
+import AppLayout from "../layouts/AppLayout.astro";
+import Product from "../components/Product/Product.astro"
+import productList from "../components/Product/products.json"
 ---
 
-<Layout>
-	<C_products />
-</Layout>
+<AppLayout>
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-12 py-4">
+				<h1>Catologo de productos</h1>
+				<p>
+					En esta sección encontrarás todos los productos que tenemos
+					a tu disposición, junto con sus catálogos detallados.
+					Explora nuestras opciones y encuentra justo lo que
+					necesitas.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+				{productList.map((product)=>{
+					return <Product name={product.name} description={product.description} catalogo={product.catalogo} foto={product.foto} />
+				})}
+		</div>
+	</div>
+</AppLayout>
+
+<script src="../components/Main/Main.js"></script>
