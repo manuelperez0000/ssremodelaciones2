@@ -1,0 +1,97 @@
+1. Optimización On-Page
+✅ Palabras clave
+
+Investiga y usa palabras clave relevantes en títulos, encabezados, URL y contenido.
+Utiliza herramientas como Google Keyword Planner, Ahrefs o Ubersuggest.
+✅ Títulos y Meta Descripciones
+
+Usa títulos llamativos con palabras clave principales.
+Escribe meta descripciones únicas (máximo 160 caracteres).
+✅ Encabezados (H1, H2, H3, etc.)
+
+Usa solo un H1 por página con la palabra clave principal.
+Organiza el contenido con H2 y H3 para mejorar la estructura.
+✅ URLs Amigables
+
+Evita URLs largas y con caracteres raros.
+Ejemplo: tudominio.com/remodelacion-hogar en lugar de tudominio.com/p=123.
+✅ Contenido de Calidad
+
+Publica contenido original y útil para el usuario.
+Mantén una buena densidad de palabras clave sin abusar.
+Usa párrafos cortos y listas para mejorar la legibilidad.
+✅ Imágenes Optimizadas
+
+Usa formatos WebP o JPEG de calidad optimizada.
+Agrega atributos ALT con palabras clave para mejorar accesibilidad y SEO de imágenes.
+✅ Enlaces Internos y Externos
+
+Vincula páginas internas para mejorar la navegación y distribución de autoridad.
+Usa enlaces a fuentes confiables para mejorar la credibilidad.
+✅ Schema Markup (Datos Estructurados)
+
+Agrega datos estructurados (JSON-LD) para destacar en Google con rich snippets.
+Ejemplo: para productos, reseñas o preguntas frecuentes.
+2. Experiencia del Usuario (UX) y SEO Técnico
+✅ Velocidad de Carga
+
+Usa herramientas como PageSpeed Insights para medir la velocidad.
+Minimiza JavaScript y CSS innecesario.
+Habilita el almacenamiento en caché y la compresión Gzip.
+✅ Mobile-Friendly (Diseño Responsivo)
+
+Asegúrate de que tu web se vea bien en dispositivos móviles.
+Usa un diseño adaptable con imágenes y botones optimizados para pantallas pequeñas.
+✅ Certificado SSL (HTTPS)
+
+La seguridad es un factor de ranking, así que usa HTTPS en toda la web.
+✅ Optimización para Core Web Vitals
+
+Mejora LCP (Largest Contentful Paint), FID (First Input Delay) y CLS (Cumulative Layout Shift).
+✅ Archivo Robots.txt y Sitemap XML
+
+Asegura que tu web tenga un robots.txt bien configurado.
+Genera un sitemap.xml y súbelo a Google Search Console.
+✅ Evita Contenido Duplicado
+
+Usa etiquetas canonical para evitar que Google indexe contenido repetido.
+3. SEO Off-Page
+✅ Backlinks de Calidad
+
+Consigue enlaces desde sitios web con autoridad y relevancia en tu sector.
+Usa estrategias como guest posting o colaboración con influencers.
+✅ Presencia en Redes Sociales
+
+Comparte tu contenido en Facebook, Instagram, LinkedIn, etc.
+Google considera la actividad social como señal de autoridad.
+✅ Google My Business (si tienes ubicación física)
+
+Si tu negocio tiene una ubicación física, regístralo en Google My Business.
+✅ Reseñas y Opiniones
+
+Pide reseñas en Google y sitios de confianza para mejorar tu reputación.
+4. Estrategia de Contenido
+✅ Blog
+
+Publica contenido relevante para atraer tráfico orgánico.
+Usa títulos atractivos y responde preguntas comunes.
+✅ Videos y Multimedia
+
+Los videos ayudan a mantener a los usuarios más tiempo en tu sitio.
+Agrega transcripciones para mejorar el SEO.
+✅ Contenido Evergreen y Actualizaciones
+
+Crea contenido que no pierda relevancia con el tiempo.
+Actualiza artículos antiguos para mejorar su posicionamiento.
+5. Análisis y Seguimiento
+✅ Google Search Console
+
+Monitoriza el tráfico y corrige errores de indexación.
+✅ Google Analytics
+
+Analiza el comportamiento de los usuarios en tu web.
+✅ Herramientas SEO (Ahrefs, SEMrush, Moz, etc.)
+
+Evalúa backlinks, ranking de palabras clave y más.
+
+https://pagespeed.web.dev/analysis/https-ssremodelaciones2-vercel-app/833it18kbt?form_factor=mobile

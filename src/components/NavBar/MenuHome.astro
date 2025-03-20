@@ -1,10 +1,20 @@
 ---
 import BtnMenu from "./BtnMenu.astro";
-import menu from "./menu.json"
+import menu from "./menu.json";
 ---
 
 <div class="mb-4">
-    <div class="row mt-5">
-        {menu.map((item)=><BtnMenu href={item.href} icon={item.icon} name={item.name} />)}
+    <div class="container-fluid">
+        <div class="row mt-5">
+            {
+                menu.map((item) => (
+                    <BtnMenu
+                        href={item.href}
+                        icon={item.icon}
+                        name={item.name}
+                    />
+                ))
+            }
+        </div>
     </div>
 </div>

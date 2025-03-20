@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 })
 
-document.querySelector(".scroll-down").addEventListener("click", function () {
+document.querySelector("#scroll-down-p")?.addEventListener("click", function () {
     const nextSection = this.closest("section").nextElementSibling
     /* const nextSection = document.querySelector(".sec2") */
     if (nextSection) {
@@ -30,12 +30,12 @@ document.querySelector(".scroll-down").addEventListener("click", function () {
 })
 
 
-document.querySelector("#products").addEventListener("click", () => {
+document.querySelector("#products")?.addEventListener("click", () => {
     window.location.href = "./products/index.html"
 })
 
 
 
-document.getElementById("services-btn").addEventListener("click", function () {
+document.getElementById("services-btn")?.addEventListener("click", function () {
     document.getElementById("sec2").scrollIntoView({ behavior: "smooth" })
 })

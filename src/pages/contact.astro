@@ -1,5 +1,6 @@
 ---
 import AppLayout from "../layouts/AppLayout.astro";
+import ContactX from "../components/Contact/Contact.astro"
 ---
 
 <AppLayout>
@@ -41,20 +42,7 @@ import AppLayout from "../layouts/AppLayout.astro";
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 bg-gray-2 p-4">
-                <h4>Envianos un whatsapp</h4>
-                <textarea
-                    id="mensaje"
-                    placeholder="Escribe tu mensaje..."
-                    class="form-control mb-2"
-                    cols="30"
-                    rows="4"></textarea>
-                <div class="text-end">
-                    <button id="enviarBtn" class="btn btn-success px-5">
-                        <i class="bi bi-whatsapp"></i> Enviar
-                    </button>
-                </div>
-            </div>
+            <ContactX client:load/>
         </div>
     </div>
 </AppLayout>
@@ -78,7 +66,11 @@ import AppLayout from "../layouts/AppLayout.astro";
 </style>
 
 <script is:inline>
-    document.addEventListener("DOMContentLoaded", () => {
+
+
+       /*  const mensaje = document.querySelector("#mensaje")
+        mensaje.addEventListener('') */
+   /*  document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("enviarBtn").addEventListener("click", () => {
             const message = document.getElementById("mensaje").value;
             if (message.trim() !== "") {
@@ -89,7 +81,7 @@ import AppLayout from "../layouts/AppLayout.astro";
                 alert("Por favor, escribe un mensaje antes de enviar.");
             }
         });
-    });
+    }); */
 </script>
 
 <script src="../components/Main/Main.js"></script>

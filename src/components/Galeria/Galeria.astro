@@ -1,0 +1,62 @@
+---
+import { onMount } from "solid-js";
+import PhotoSwipeLightbox from 'photoswipe/lightbox';
+import 'photoswipe/style.css';
+
+const imagenes = [
+  { src: "/imagenes/img1.jpg", width: 1200, height: 800, alt: "Imagen 1" },
+  { src: "/imagenes/img2.jpg", width: 1200, height: 800, alt: "Imagen 2" },
+  { src: "/imagenes/img3.jpg", width: 1200, height: 800, alt: "Imagen 3" },
+  { src: "/imagenes/img4.jpg", width: 1200, height: 800, alt: "Imagen 4" }
+];
+
+onMount(() => {
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: "#galeria",
+    children: "a",
+    pswpModule: () => import("photoswipe")
+  });
+  lightbox.init();
+});
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galería con PhotoSwipe</title>
+    <style>
+      .galeria {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+        padding: 20px;
+      }
+
+      .galeria img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .galeria img:hover {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="galeria" class="galeria">
+      {imagenes.map((img) => (
+        <a href={img.src} data-pswp-width={img.width} data-pswp-height={img.height} target="_blank">
+          <img src={img.src} alt={img.alt} loading="lazy" />
+        </a>
+      ))}
+    </div>
+  </body>
+</html>
+
+<script is:inline>
+
+</script>

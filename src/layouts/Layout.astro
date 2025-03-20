@@ -1,6 +1,4 @@
----
-import { ClientRouter } from 'astro:transitions';
----
+
 <!doctype html>
 <html lang="es">
   <head>
@@ -13,7 +11,7 @@ import { ClientRouter } from 'astro:transitions';
       href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
       rel="stylesheet"
     />
-    <ClientRouter />
+    <!-- <ClientRouter /> -->
   </head>
   <body>
     <slot />
@@ -22,10 +20,20 @@ import { ClientRouter } from 'astro:transitions';
 
 <style is:global>
   body {
-    margin: 0;
-    padding: 0%;
-    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
   }
+
+  ::-webkit-scrollbar {
+  width: 10px; /* Ancho de la barra vertical */
+  height: 100px; /* Alto de la barra horizontal */
+}
+
+/* Color del track (fondo del scrollbar) */
+::-webkit-scrollbar-track {
+  background: #714141;
+  border-radius: 5px;
+}
 
   :root {
     --yellow: rgb(245, 185, 20);

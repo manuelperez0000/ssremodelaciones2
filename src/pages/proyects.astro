@@ -1,8 +1,157 @@
 ---
-import AppLayout from '../layouts/AppLayout.astro'
+import AppLayout from "../layouts/AppLayout.astro";
+
+
 ---
-<AppLayout >
-    <h1>Proyects</h1>
+
+<AppLayout>
+    <h1 class="text-center my-4">Nuestros Proyectos</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3>Proyecto de remodelacion Desamparados</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Nobis commodi libero eligendi aliquam suscipit ipsa cumque
+                    voluptate totam. Sunt quis ratione maxime odio sit.
+                    Repudiandae dolorum a enim ab distinctio!
+                </p>
+            </div>
+            <div class="col-12">
+                <div class="content-image">
+                    <div class="box">
+                        <img
+                            class="img-detail"
+                            src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="box">
+                        <img
+                            class="img-detail"
+                            src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="box">
+                        <img
+                            class="img-detail"
+                            src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="box">
+                        <img
+                            class="img-detail"
+                            src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="box">
+                        <img
+                            class="img-detail"
+                            src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="box">
+                        <img
+                            class="img-detail"
+                            src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-200.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="box">
+                        <img
+                            class="img-detail"
+                            src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="box">
+                        <img
+                            class="img-detail"
+                            src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+        <img id="imagen-modal" src="" alt="Imagen ampliada" />
+    </div>
 </AppLayout>
+
+<style>
+    .content-image {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+        grid-gap: 10px;
+        margin-bottom: 100px;
+    }
+    .box:nth-child(2) {
+        grid-column: span 2;
+    }
+    .box:nth-child(7) {
+        grid-column: span 3;
+    }
+    .box:nth-child(8) {
+        grid-column: span 2;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .content-image img:hover {
+        transform: scale(1.05);
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal img {
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 8px;
+    }
+
+    .modal .cerrar {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* .box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    } */
+    /* .box:nth-child(1) {
+        grid-column: span 1;
+    }
+     */
+</style>
+
 
 <script src="../components/Main/Main.js"></script>
