@@ -8,10 +8,7 @@ import AppLayout from "../layouts/AppLayout.astro";
     <div class="container">
         <div class="row">
             <div class="col-12">
-                
-            </div>
-            <div class="col-12">
-                <Galeria  />
+                <Galeria client:load />
             </div>
         </div>
     </div>
@@ -47,7 +44,8 @@ import AppLayout from "../layouts/AppLayout.astro";
         box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2); */
     }
     .img-modal-ext{
-        max-height: 80vh;
+        max-height: 95%;
+        max-width: 90%;
     }
 
     .img-detail:hover {
@@ -67,7 +65,7 @@ import AppLayout from "../layouts/AppLayout.astro";
     .bg-modal {
         background-color: rgba(22, 22, 22, 0.676);
         display: flex;
-        align-items: center;
+        align-items: top;
         justify-content: center;
         position: fixed;
         z-index: 1;
@@ -78,11 +76,16 @@ import AppLayout from "../layouts/AppLayout.astro";
     }
 
     .body-modal {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(100% - 60px);
     }
 
     .modal-buttons {
         position: absolute;
-        bottom: 30px;
+        bottom: 10px;
         display: flex;
         align-items: center;
         justify-content: center;

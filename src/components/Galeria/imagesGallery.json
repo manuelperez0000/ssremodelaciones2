@@ -1,0 +1,27 @@
+[
+  {
+    "title": "title 1",
+    "images": [
+      "https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg",
+      "https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg",
+      "https://photolari.com/wp-content/uploads/2017/06/MontBlancGigapixel-01.jpg",
+      "https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg",
+      "https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg",
+      "https://photolari.com/wp-content/uploads/2017/06/MontBlancGigapixel-01.jpg"
+    ]
+  },
+  {
+    "title": "title 2",
+    "images": [
+      "https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg",
+      "https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg"
+    ]
+  },
+  {
+    "title": "title 3",
+    "images": [
+      "https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg",
+      "https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg"
+    ]
+  }
+]
