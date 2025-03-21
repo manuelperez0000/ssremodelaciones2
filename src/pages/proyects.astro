@@ -15,43 +15,24 @@ import AppLayout from "../layouts/AppLayout.astro";
 </AppLayout>
 
 <style is:global>
-    .content-image {
-        display: grid;
-        gap: 5px;
-        margin-bottom: 100px;
-        grid-template-columns: repeat(5 , minmax(150px, 1fr));
-       /*  display: grid;
-        grid-template-columns: repeat(3, 1fr) !important;
-        gap: 5px;
-        margin-bottom: 100px;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center; */
-    }
-
     
 
-    .img-detail {
+    /* .img-detail {
         display: flex;
         width: 100%;
         height: 100%;
         object-fit: cover;
-        grid-column: span 4;
-       /*  max-height: 80vh;
-        transition: 1s;
-        filter: brightness(1.2);
-        box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2); */
-    }
-    .img-modal-ext{
+        grid-column: span 5;
+        border: 3px solid red;
+    } */
+    .img-modal-ext {
         max-height: 95%;
         max-width: 90%;
+        min-height: 50%;
+        object-fit: contain;
     }
 
-    .img-detail:hover {
-        cursor: pointer;
-        transform: scale(1.01);
-    }
+    
     .box:nth-child(1) {
         grid-column: span 4;
     }

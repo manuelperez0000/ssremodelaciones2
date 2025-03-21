@@ -10,5 +10,3 @@ export const Modal = ({ close, active, image, anterior, siguiente, id }) =>
             <button onClick={() => siguiente(id)} class={'modal-arrows'}> <i class={'bi bi-chevron-right'} /> </button>
         </div>
     </div>
-
-

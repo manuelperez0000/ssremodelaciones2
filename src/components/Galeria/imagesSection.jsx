@@ -9,9 +9,9 @@ const ImagesSection = ({ images, title }) => {
     return <div style={{ marginBottom: "100px" }}>
         <h1>{title}</h1>
         <div className="container">
-            <div className="row g-1">
+            <div className="row mb-1 g-1">
                 {images.map((image, index) => {
-                    return <div className="col-3 mh-200">
+                    return <div className="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
                         <img onClick={(e) => openModal(e)}
                             id={index}
                             class="image-12"
