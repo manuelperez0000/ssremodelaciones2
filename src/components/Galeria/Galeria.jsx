@@ -1,5 +1,5 @@
 import { useState } from "preact/hooks"
-import { Modal } from "./modal"
+/* import { Modal } from "./modal" */
 import ImagesSection from "./imagesSection";
 
 const imagesGalery = [
@@ -23,7 +23,7 @@ const imagesGalery = [
 
 export const Galeria = () => {
 
-  const [modal, setModal] = useState(false)
+ /*  const [modal, setModal] = useState(false)
   const [image, setImage] = useState(false)
   const [imageId, setImageId] = useState(false)
 
@@ -31,11 +31,11 @@ export const Galeria = () => {
     setImage(e.target.src)
     setImageId(e.target.id)
     setModal(true)
-  }
+  } */
 
-  const close = () => setModal(false)
+ /*  const close = () => setModal(false) */
 
-  const anterior = (id) => {
+ /*  const anterior = (id) => {
     const length = imagesGalery.length
     if (id < 1) {
       setImageId(length - 1)
@@ -44,9 +44,9 @@ export const Galeria = () => {
       setImageId(Number(id) - 1)
       setImage(imagesGalery[Number(id) - 1])
     }
-  }
+  } */
 
-  const siguiente = (id) => {
+/*   const siguiente = (id) => {
     const length = imagesGalery.length
     if (id >= length - 1) {
       setImage(imagesGalery[0])
@@ -55,7 +55,7 @@ export const Galeria = () => {
       setImage(imagesGalery[Number(id) + 1])
       setImageId(Number(id) + 1)
     }
-  }
+  } */
 
 
 
