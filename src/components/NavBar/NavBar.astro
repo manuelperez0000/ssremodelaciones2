@@ -2,24 +2,6 @@
 import menu from "./menu.json";
 ---
 
-<!-- <nav class="px-4">
-    <img src="/logo2.png" alt="" />
-    <div class="nav-buttons">
-        <div>
-            <a href="/">Inicio</a>
-        </div>
-        {menu.map((item)=>{
-            return <div>
-            <a href={item.href}>{item.name}</a>
-        </div>
-        })}
-        <div>
-            <a target="_blank" href="https://api.whatsapp.com/send/?phone=50670068477&text&type=phone_number&app_absent=0" class="btn btn-success text-light btn-ws">
-                <i class="bi bi-whatsapp text-light mx-1"></i> Escribenos!
-            </a>
-        </div>
-    </div>
-</nav> -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand brand-a" href="/">
@@ -39,7 +21,9 @@ import menu from "./menu.json";
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/">Inicio</a>
+                    <a class="nav-link" aria-current="page" href="/">
+                        <i class="bi bi-house mx-1"></i>
+                        Inicio</a>
                 </li>
                 {
                     menu.map((item) => {
@@ -50,7 +34,7 @@ import menu from "./menu.json";
                                     aria-current="page"
                                     href={item.href}
                                 >
-                                    {item.name}
+                                    <i class={`mx-1 bi ${item.icon}`}></i> {item.name}
                                 </a>
                             </div>
                         );

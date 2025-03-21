@@ -10,13 +10,13 @@
         "name":"Servicios"
     },
     {
+        "href":"/proyects",
+        "icon":"bi bi-hammer",
+        "name":"Proyectos"
+    },
+    {
         "href":"/contact",
         "icon":"bi bi-phone",
         "name":"Contactanos"
-    },
-    {
-        "href":"/proyects",
-        "icon":"bi bi-gear",
-        "name":"Proyectos"
     }
 ]
