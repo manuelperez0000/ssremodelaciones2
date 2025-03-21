@@ -1,7 +1,7 @@
 [{
     "name":"Pisos Dec en PVC",
     "description":"Un piso DEC en PVC es un revestimiento resistente y flexible fabricado en policloruro de vinilo. Destaca por su durabilidad, fácil mantenimiento y resistencia al agua, siendo ideal para hogares, oficinas y espacios comerciales. Además, ofrece una amplia variedad de diseños que imitan madera, piedra y otros acabados.",
-    "catalogo":false,
+    "catalogo":"https://manuelperez0000.github.io/catalogos-ssremodelaciones/piso-dec.pdf",
     "foto":"/productos/1.png",
     "id":1
 },
@@ -20,7 +20,7 @@
     "id":3
 },
 {
-    "name":"Revestimientos de interiores para pared",
+    "name":"Piedra flexible de interiores y exteriores",
     "description":"Materiales decorativos utilizados para cubrir y embellecer las paredes interiores, disponibles en diversas texturas, colores y diseños para mejorar la estética y funcionalidad de los espacios.",
     "catalogo":"https://manuelperez0000.github.io/catalogos-ssremodelaciones/piedra-flexible.pdf",
     "foto":"/productos/4.png",
@@ -29,7 +29,7 @@
 {
     "name":"Laminas de PVC tipo marmol",
     "description":"Paneles de cloruro de polivinilo que imitan la apariencia del mármol, ofreciendo una alternativa económica, ligera y de fácil instalación para lograr un acabado lujoso en superficies interiores.",
-    "catalogo":false,
+    "catalogo":"https://manuelperez0000.github.io/catalogos-ssremodelaciones/pvc-tipo-marmol.pdf",
     "foto":"/productos/5.png",
     "id":5
 },
@@ -57,7 +57,7 @@
 {
     "name":"Paneles acanalados",
     "description":"Revestimientos con superficies onduladas o en forma de canales, utilizados tanto en interiores como en exteriores para añadir textura, mejorar la acústica y aportar un diseño distintivo a paredes y techos.",
-    "catalogo":false,
+    "catalogo":"https://manuelperez0000.github.io/catalogos-ssremodelaciones/paneles-acanalados.pdf",
     "foto":"/productos/9.png",
     "id":9
 }
