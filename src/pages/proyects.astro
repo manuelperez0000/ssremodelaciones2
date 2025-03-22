@@ -44,7 +44,7 @@ import AppLayout from "../layouts/AppLayout.astro";
     }
 
     .bg-modal {
-        background-color: rgba(22, 22, 22, 0.676);
+        background-color: rgba(22, 22, 22, 0.817);
         display: flex;
         align-items: top;
         justify-content: center;
@@ -57,6 +57,8 @@ import AppLayout from "../layouts/AppLayout.astro";
     }
 
     .body-modal {
+        overflow-y: auto; /* Agrega una barra de desplazamiento vertical si es necesario */
+        overflow-x: hidden;
         width: 100%;
         display: flex;
         align-items: center;

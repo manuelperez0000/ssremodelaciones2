@@ -1,4 +1,4 @@
-import { useState } from "preact/hooks"
+import { useRef, useState, useEffect } from "preact/hooks"
 
 export const Modal = ({ close, active, image, anterior, siguiente, id }) => {
 
@@ -6,6 +6,11 @@ export const Modal = ({ close, active, image, anterior, siguiente, id }) => {
     const [position, setPosition] = useState({ x: 0, y: 0 });
     const [dragging, setDragging] = useState(false);
     const [startPos, setStartPos] = useState({ x: 0, y: 0 });
+    const imgRef = useRef(null);
+
+    useEffect(() => {
+        if (scale === 1) setPosition({ x: 0, y: 0 }); // Reset position when zoom is reset
+    }, [scale]);
 
     const handleWheel = (e) => {
         e.preventDefault();
@@ -17,16 +22,29 @@ export const Modal = ({ close, active, image, anterior, siguiente, id }) => {
         setStartPos({ x: e.clientX - position.x, y: e.clientY - position.y });
     };
 
-    const handleMouseMove = (e) => {
-        if (!dragging) return;
-        setPosition({ x: e.clientX - startPos.x, y: e.clientY - startPos.y });
-    };
+    /* const handleMouseMove = (e) => {
+        if (!dragging ) return;
+        const img = imgRef.current;
+        const container = img.parentElement;
+        const maxX = (img.width * scale - container.clientWidth) / 2;
+        const maxY = (img.height * scale - container.clientHeight) / 2;
+
+        let newX = e.clientX - startPos.x;
+        let newY = e.clientY - startPos.y;
+
+        // Restringir dentro de los límites
+        newX = Math.max(-maxX, Math.min(maxX, newX));
+        newY = Math.max(-maxY, Math.min(maxY, newY));
+
+        setPosition({ x: newX, y: newY });
+    }; */
 
     const handleMouseUp = () => setDragging(false);
     return active &&
         <div className='bg-modal'>
             <div class='body-modal' onWheel={handleWheel}>
                 {image ? <img
+                    ref={imgRef}
                     class={'img-modal-ext'}
                     src={image}
                     alt={'remodelaciones en costa rica'}
@@ -35,7 +53,7 @@ export const Modal = ({ close, active, image, anterior, siguiente, id }) => {
                         transition: dragging ? "none" : "transform 0.2s ease-out",
                     }}
                     onMouseDown={handleMouseDown}
-                    onMouseMove={handleMouseMove}
+                    /* onMouseMove={handleMouseMove} */
                     onMouseUp={handleMouseUp}
                     onMouseLeave={handleMouseUp}
                     draggable="false"
