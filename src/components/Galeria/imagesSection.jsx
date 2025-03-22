@@ -7,7 +7,7 @@ const ImagesSection = ({ images, title }) => {
     const { modal, image, imageId, openModal, close, anterior, siguiente } = useImages({ images })
 
     return <div style={{ marginBottom: "100px" }}>
-        <h1>{title}</h1>
+        <h2>{title}</h2>
         <div className="container">
             <div className="row mb-1 g-1">
                 {images.map((image, index) => {

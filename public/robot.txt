@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /wp-login.php
+Disallow: /wp-admin/
+Disallow: /cart/
+Disallow: /checkout/
+
+Sitemap: https://www.ssremodelaciones.com/sitemap.xml

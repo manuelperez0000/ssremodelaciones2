@@ -11,7 +11,9 @@ import { ClientRouter } from "astro:transitions";
         <meta name="viewport" content="width=device-width" />
         <link rel="icon" type="image/svg+xml" href="/icono.webp" />
         <meta name="generator" content={Astro.generator} />
-        <title>Productos SS REMODELACIONES</title>
+        <title>Remodelaciones en Costa Rica | Diseño y Renovación de Espacios</title>
+        <meta name="description" content="Somos expertos en remodelaciones en Costa Rica. Diseñamos y renovamos cocinas, baños y oficinas. ¡Contáctanos hoy!">
+
         <link
             href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
             rel="stylesheet"
@@ -23,6 +25,35 @@ import { ClientRouter } from "astro:transitions";
         <slot />
         <Footer />
     </body>
+    <script is:inline type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "SS Remodelaciones Costa Rica",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Heredia, San José",
+            "addressLocality": "San José",
+            "addressRegion": "Costa Rica",
+            "postalCode": "40103",
+            "addressCountry": "CR"
+          },
+          "telephone": "+506 6242-1680",
+          "url": "https://www.ssremodelaciones.com/",
+          "image": "https://www.ssremodelaciones.com/logo.png",
+          "priceRange": "$$",
+          "openingHours": "Mo-Sa 08:00-18:00",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 9.935,
+            "longitude": -84.085
+          },
+          "sameAs": [
+            "https://www.facebook.com/ssremodelaciones",
+            "https://www.instagram.com/ssremodelaciones/"
+          ]
+        }
+        </script>
 </html>
 
 <style>
