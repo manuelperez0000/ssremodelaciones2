@@ -15,8 +15,6 @@ import AppLayout from "../layouts/AppLayout.astro";
 </AppLayout>
 
 <style is:global>
-    
-
     /* .img-detail {
         display: flex;
         width: 100%;
@@ -30,9 +28,11 @@ import AppLayout from "../layouts/AppLayout.astro";
         max-width: 90%;
         min-height: 50%;
         object-fit: contain;
+        user-select: none; /* Evita la selección del contenido */
+        pointer-events: auto; /* Asegura que los eventos se capturen correctamente */
+        -webkit-user-drag: none;
     }
 
-    
     .box:nth-child(1) {
         grid-column: span 4;
     }
