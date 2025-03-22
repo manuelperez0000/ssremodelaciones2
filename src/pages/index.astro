@@ -6,6 +6,7 @@ import Ventajas from "../components/Ventajas/Ventajas.astro";
 import Stoneflex from "../components/Stoneflex/Stoneflex.astro";
 import MenuHome from "../components/NavBar/MenuHome.astro";
 import NavBarMobile from "../components/NavBarMobile/NavBarMobile.astro";
+import PorqueElegirnos from "../components/Seo/PorqueElegirnos.astro"
 ---
 
 <Layout>
@@ -19,8 +20,13 @@ import NavBarMobile from "../components/NavBarMobile/NavBarMobile.astro";
 				<img height="110px" src="/logo.png" alt="" />
 				<div class="w-welcome-text">
 					<h1 class="welcome-text anton text-light bg-dark">
-						Bienvenido a SS REMODELACIONES
+						Remodelaciones en Costa Rica
 					</h1>
+				</div>
+				<div class="seo-principal">
+					<h2>Servicios de remodelación</h2> -
+					<h2>Renovación de casas</h2> -
+					<h2>Remodelaciones comerciales</h2>
 				</div>
 
 				<p class="mt-2">
@@ -49,6 +55,10 @@ import NavBarMobile from "../components/NavBarMobile/NavBarMobile.astro";
 
 	<section id="sec3">
 		<Ventajas />
+	</section>
+
+	<section id="sec4">
+		<PorqueElegirnos />
 	</section>
 
 	<Footer />
