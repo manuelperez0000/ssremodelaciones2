@@ -1,5 +1,6 @@
 ---
 import { ClientRouter } from "astro:transitions";
+import "bootstrap/dist/css/bootstrap.min.css";
 ---
 
 <!doctype html>
@@ -20,6 +21,12 @@ import { ClientRouter } from "astro:transitions";
     <link
       href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
       rel="stylesheet"
+    />
+    <link 
+      rel="stylesheet" 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+      integrity="sha384-TX8fAOn8kIGsAZmJw+Q5hWOkz0ZthP5I6pAnKXwkcNAJtQlhWDbh1z5oH9azPSu2" 
+      crossorigin="anonymous"
     />
     <ClientRouter />
   </head>
@@ -392,7 +399,7 @@ import { ClientRouter } from "astro:transitions";
   .welcome-text {
     border-radius: 3px;
     padding: 10px;
-    background: linear-gradient(rgb(23, 23, 23), rgb(79, 79, 78));
+    background: linear-gradient(rgb(3, 24, 71), rgb(30, 35, 38));
   }
 
   @media (max-width: 450px) {
