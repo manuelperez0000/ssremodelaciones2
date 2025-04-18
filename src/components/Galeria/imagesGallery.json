@@ -6,6 +6,19 @@
       "https://manuelperez0000.github.io/catalogos-ssremodelaciones/construccion-de-techo-en-hierro/3.jpg",
       "https://manuelperez0000.github.io/catalogos-ssremodelaciones/construccion-de-techo-en-hierro/4.jpg",
       "https://manuelperez0000.github.io/catalogos-ssremodelaciones/construccion-de-techo-en-hierro/1.jpg"
+    ],
+    "videos":[]
+  },
+  {
+    "title":"Remodelacion de cocina y sala en belen",
+    "images":["proyectos/belen/1.png","proyectos/belen/2.png"],
+    "videos":[
+    ]
+  },
+  {
+    "title":"Construcción de consultorio Laura",
+    "images":["proyectos/consultorio/1.png","proyectos/consultorio/2.webp"],
+    "videos":[
     ]
   }
 ]

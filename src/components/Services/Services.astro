@@ -1,5 +1,6 @@
 ---
 import ServiceContent from "./ServiceContent.astro";
+import services from "./services.json";
 ---
 
 <div class="services">
@@ -13,78 +14,33 @@ import ServiceContent from "./ServiceContent.astro";
         </div>
 
         <div class="col-12 mt-4 px-5">
-            <ServiceContent
-                tittle="Remodelaciones y Construcción en General"
-                image="https://static.wixstatic.com/media/5eeca8_553c61afcc43420aa53d5042d0d1142e~mv2.jpg/v1/fill/w_372,h_358,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Ingenieros_edited.jpg"
-                list={["Remodelacion de casas", "Remodelacion de oficinas","Remodelacion de baños","Reformas de vivienda", "Diseño de Interiores","Renderizado de espacios en 3D"]}
-                
-            />
-            <ServiceContent
-                tittle="Suministro, Instalación y Restauración"
-                image="https://static.wixstatic.com/media/5eeca8_57783ce51a0e45fb85141509d22feadf~mv2.jpg/v1/crop/x_125,y_0,w_710,h_646/fill/w_372,h_358,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/34.jpg"
-                list={[
-                    "Pisos de Ingeniería en Madera",
-                    "Pisos Vinílicos",
-                    "Pisos Deck",
-                ]}
-                
-            />
-            <ServiceContent
-                tittle="Suministro e Instalacion de muebles a la medida"
-                image="/services.webp"
-                list={[
-                    "Muebles de cocina",
-                    "Muebles para oficina",
-                    "Mesas Personalizadas",
-                ]}
-                
-            />
-            <ServiceContent
-                tittle="Mantenimiento Residenciales y empresariales"
-                image="https://static.wixstatic.com/media/5eeca8_69040c1d798f4f4f8c9a6584376ee6c0~mv2.jpg/v1/fill/w_372,h_358,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2.jpg"
-                list={[
-                    "Fontanería",
-                    "Electricidad",
-                    "Techos y Canoas",
-                    "Pintura y acabados",
-                ]}
-                
-            />
-            <ServiceContent
-                tittle="Muebles a la medida en Madera y Tejidos"
-                image="https://static.wixstatic.com/media/5eeca8_1c018cf595094704818a585eb9f8ef13~mv2.jpg/v1/crop/x_0,y_116,w_2250,h_2162/fill/w_372,h_358,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/WhatsApp%20Image%202024-06-13%20at%2012_08_edite.jpg"
-                list={["Sillas", "Camas", "Recibidor", "Cómodas", "Butacas"]}
-                
-            />
-            <ServiceContent
-                tittle="Páneles decorativos de interiro y exterior"
-                image="https://static.wixstatic.com/media/5eeca8_eca7c98f681b44ac9be3967384bae5e9~mv2.jpeg/v1/fill/w_372,h_358,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Panel%20acanalado.jpeg"
-                list={[
-                    "Wall Panel",
-                    "Láminas PVC acabado en mármol",
-                    "Iluminación led inteligente",
-                ]}
-                
-            />
-            <ServiceContent
-                tittle="Tramitologia de planos constructivos y permisos municipales"
-                image="https://i.pinimg.com/originals/60/70/93/607093fb4c95ea34ccd8e2af950d4f4e.jpg"
-                list={["Planos electricos", "Planos mecanicos", "Planos arquitectonicos","Tramitologia ante el CFIA"]}
-                
-            />
+            {
+                services.map((service) => {
+                    return (
+                        <ServiceContent client:load
+                            tittle={service.tittle}
+                            image={service.image}
+                            list={service.list}
+                        />
+                    );
+                })
+            }
         </div>
     </div>
 </div>
 
 <style>
     .services {
-    min-height: 100vh;
-    background-repeat: repeat-y;
-    background-size: cover;
-    color: var(--light-gray);
-    text-align: center;
-    padding: 60px 0px;
-    background: linear-gradient(rgba(27, 26, 26, 0.938), rgba(20, 20, 21, 0.92)),
-      url("/public/marmol.webp");
-  }
+        min-height: 100vh;
+        background-repeat: repeat-y;
+        background-size: cover;
+        color: var(--light-gray);
+        text-align: center;
+        padding: 60px 0px;
+        background: linear-gradient(
+                rgba(27, 26, 26, 0.938),
+                rgba(20, 20, 21, 0.92)
+            ),
+            url("/public/marmol.webp");
+    }
 </style>
