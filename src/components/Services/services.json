@@ -1,7 +1,7 @@
 [
     {
         "tittle": "Remodelaciones y Construcción en General",
-        "image": "servicios/1.jpg",
+        "image": "./servicios/1.jpg",
         "list": [
             "Remodelacion de casas",
             "Remodelacion de oficinas",
@@ -13,7 +13,7 @@
     },
     {
         "tittle": "Suministro, Instalación y Restauración",
-        "image": "servicios/2.png",
+        "image": "/servicios/2.png",
         "list": [
             "Pisos de Ingeniería en Madera",
             "Pisos Vinílicos",
@@ -31,7 +31,7 @@
     },
     {
         "tittle": "Mantenimiento Residenciales y empresariales",
-        "image": "servicios/4.jpg",
+        "image": "/servicios/4.jpg",
         "list": [
             "Fontanería",
             "Electricidad",
@@ -52,7 +52,7 @@
     },
     {
         "tittle": "Páneles decorativos de interiro y exterior",
-        "image": "servicios/5.jpg",
+        "image": "/servicios/5.jpg",
         "list": [
             "Wall Panel",
             "Láminas PVC acabado en mármol",
@@ -61,7 +61,7 @@
     },
     {
         "tittle": "Tramitologia de planos constructivos y permisos municipales",
-        "image": "servicios/plano.png",
+        "image": "/servicios/plano.png",
         "list": [
             "Planos electricos",
             "Planos mecanicos",
