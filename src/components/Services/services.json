@@ -22,7 +22,7 @@
     },
     {
         "tittle": "Suministro e Instalacion de muebles a la medida",
-        "image": "/servicios/3.jpg",
+        "image": "https://raw.githubusercontent.com/manuelperez0000/ssremodelaciones2/refs/heads/master/public/servicios/3.png",
         "list": [
             "Muebles de cocina",
             "Muebles para oficina",
@@ -31,7 +31,7 @@
     },
     {
         "tittle": "Mantenimiento Residenciales y empresariales",
-        "image": "/servicios/4.jpg",
+        "image": "https://raw.githubusercontent.com/manuelperez0000/ssremodelaciones2/refs/heads/master/public/servicios/4.png",
         "list": [
             "Fontanería",
             "Electricidad",
@@ -52,7 +52,7 @@
     },
     {
         "tittle": "Páneles decorativos de interiro y exterior",
-        "image": "/servicios/5.jpg",
+        "image": "https://raw.githubusercontent.com/manuelperez0000/ssremodelaciones2/refs/heads/master/public/servicios/5.jpg",
         "list": [
             "Wall Panel",
             "Láminas PVC acabado en mármol",
