@@ -22,7 +22,11 @@
     },
     {
         "tittle": "Suministro e Instalacion de muebles a la medida",
+<<<<<<< HEAD
         "image": "/servicios/mueble.png",
+=======
+        "image": "https://raw.githubusercontent.com/manuelperez0000/ssremodelaciones2/refs/heads/master/public/servicios/mueble.png",
+>>>>>>> 988a0c2bacaaa6d7c6b6ab2e75d820de8e33040e
         "list": [
             "Muebles de cocina",
             "Muebles para oficina",
